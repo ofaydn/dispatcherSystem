@@ -15,7 +15,7 @@ typedef struct {
 } ProcessInfo;
 
 void create_archive(int argc, char *argv[]);
-void fcfs_algorithm();
+void fcfs_algorithm(ProcessInfo ps[]);
 void sjf_algorithm();
 void rr8_algorithm();
 void rr16_algorithm();
