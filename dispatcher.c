@@ -103,42 +103,41 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
 
     // Allocate memory for the array of ProcessInfo structs
     ProcessInfo* processes = malloc(lines * sizeof(ProcessInfo));
+    ProcessInfo* processes = (ProcessInfo*) malloc(lines * sizeof(ProcessInfo));
     if (processes == NULL) {
-        printf("Memory allocation failed.\n");
+        printf("Error: Memory allocation failed.\n");
         fclose(file);
-	exit(1);
+        return NULL;
     }
 
-	char line[256];
-	int index = 0;
-     while (fgets(line, sizeof(line), file)) {
-        ProcessInfo process;
-        char* token = strtok(line, ",");
-        
-        process.process_number = strdup(token);
+    char line[256];
+    int index = 0;
+    while (fgets(line, sizeof(line), file)) {
+        ProcessInfo process = {0};  // Zero-initialize the struct to avoid garbage values
 
+        // Allocate memory for the process_number and ensure it has enough space
+        char* token = strtok(line, ",");
+        if (token) {
+            process.process_number = strdup(token);  // Use strdup to allocate and copy
+            if (!process.process_number) {
+                printf("Error: Memory allocation failed for process_number.\n");
+                fclose(file);
+                free(processes);
+                return NULL;
+            }
+        }
+
+        // Parse the other fields
         process.arrival_time = atoi(strtok(NULL, ","));
         process.priority = atoi(strtok(NULL, ","));
-        process.burst_time = atoi(strtok(NULL, ","));
-        process.ram = atoi(strtok(NULL, ","));
-        process.cpu_rate = atoi(strtok(NULL, ",")); // Last value
+        process.burst_time = atoi(strtok(NULL, ","));  // Handle potential trailing spaces
+        process.ram = atoi(strtok(NULL, ","));  // Continue parsing
+        process.cpu_rate = atoi(strtok(NULL, ","));  // Last field
 
-        processes[index++] = process;
+        processes[index++] = process;  // Add to the array
     }
 
     fclose(file);
-
-    // Sort processes by priority (0 > 1 > 2 > 3)
-    for (int i = 0; i < lines - 1; i++) {
-        for (int j = 0; j < lines - i - 1; j++) {
-            if (processes[j].priority > processes[j + 1].priority) {
-                ProcessInfo temp = processes[j];
-                processes[j] = processes[j + 1];
-                processes[j + 1] = temp;
-            }
-        }
-    }
-
     *numProcesses = lines;
     return processes;
 }
