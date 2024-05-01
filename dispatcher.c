@@ -14,7 +14,8 @@ typedef struct {
     int cpu_rate;
 } ProcessInfo;
 
-void create_archive(int argc, char *argv[]);
+void extractInput
+void createOutput(int argc, char *argv[]);
 void fcfs_algorithm(ProcessInfo ps[]);
 void sjf_algorithm();
 void rr8_algorithm();
@@ -91,7 +92,7 @@ void extract_archive(char *input_file) {
 		    }
         token = strtok(NULL, "!|");
         }  
-    }
+    
     fseek(file,archiveSize,SEEK_SET);
     int i;
     for (i = 0; i < num_files; ++i) {
@@ -111,10 +112,4 @@ void extract_archive(char *input_file) {
             }
         } else {
             fprintf(stderr, "Memory allocation failed for file %d.\n", i + 1);
-            break;
-        }
-    }
-    create_files(files,num_files,directory_name);   
-    fclose(file);
-
-}
+            brex
