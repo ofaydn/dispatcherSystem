@@ -27,37 +27,32 @@ int main(int argc, char *argv[]) {
     if (argc != 2) {				//Usage check 
         printf("Usage:\n");
         printf("To dispatch processes to system:\n");
-        printf("cpu_schedular <input.txt>:\n");
+        printf("%s <input.txt>:\n",argv[0]);
         exit(1);
     }
-    int numProcesses = 0;
-    ProcessInfo* processArr = extractArchive(argv[1], &numProcesses);
-    for (int i = 0; i < numProcesses - 1; i++) {
-        for (int j = 0; j < numProcesses - i - 1; j++) {
-            if (processArr[j].priority > processArr[j + 1].priority) {
-                ProcessInfo temp = processArr[j];
-                processArr[j] = processArr[j + 1];
-                processArr[j + 1] = temp;
-            }
-        }
+    int numProcesses;
+    ProcessInfo* processes = extractProcesses(argv[1], &numProcesses);
+
+    if (processes == NULL) {
+        return 1; // Extraction failed
     }
 
-    // Print the processes consecutively
+    // Display sorted process information
     for (int i = 0; i < numProcesses; i++) {
-        printf("Process Number: %s\n", processArr[i].process_number);
-        printf("Arrival Time: %d\n", processArr[i].arrival_time);
-        printf("Priority: %d\n", processArr[i].priority);
-        printf("Burst Time: %d\n", processArr[i].burst_time);
-        printf("RAM: %d\n", processArr[i].ram);
-        printf("CPU Rate: %d\n", processArr[i].cpu_rate);
+        printf("Process: %s\n", processes[i].process_number);
+        printf("Arrival Time: %d\n", processes[i].arrival_time);
+        printf("Priority: %d\n", processes[i].priority);
+        printf("Burst Time: %d\n", processes[i].burst_time);
+        printf("RAM: %d\n", processes[i].ram);
+        printf("CPU Rate: %d\n", processes[i].cpu_rate);
         printf("\n");
     }
 
     // Free the memory allocated for the processArr
-    for (int i = 0; i < numProcesses; i++) {
-        free(processArr[i].process_number);
+   for (int i = 0; i < numProcesses; i++) {
+        free(processes[i].process_number);
     }
-    free(processArr);
+    free(processes);
 
     return 0;
 }
@@ -116,20 +111,34 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
 
 	char line[256];
 	int index = 0;
-    // Read the data from the file and populate the array of ProcessInfo structs
-    for (int i = 0; i < lines; i++) {
+     while (fgets(line, sizeof(line), file)) {
         ProcessInfo process;
-        process.process_number = malloc(10 * sizeof(char));
-        if (process.process_number == NULL) {
-            printf("Memory allocation failed.\n");
-            exit(1);
-        }printf("prescan");
-        fscanf(file, "%[^,],%d,%d,%d,%d,%d", process.process_number, &process.arrival_time, &process.priority, &process.burst_time, &process.ram, &process.cpu_rate);
-	printf("postscan %d",process.process_number);
-	processes[i] = process;
+        char* token = strtok(line, ",");
+        
+        process.process_number = strdup(token);
+
+        process.arrival_time = atoi(strtok(NULL, ","));
+        process.priority = atoi(strtok(NULL, ","));
+        process.burst_time = atoi(strtok(NULL, ","));
+        process.ram = atoi(strtok(NULL, ","));
+        process.cpu_rate = atoi(strtok(NULL, ",")); // Last value
+
+        processes[index++] = process;
     }
 
     fclose(file);
+
+    // Sort processes by priority (0 > 1 > 2 > 3)
+    for (int i = 0; i < lines - 1; i++) {
+        for (int j = 0; j < lines - i - 1; j++) {
+            if (processes[j].priority > processes[j + 1].priority) {
+                ProcessInfo temp = processes[j];
+                processes[j] = processes[j + 1];
+                processes[j + 1] = temp;
+            }
+        }
+    }
+
     *numProcesses = lines;
     return processes;
 }
