@@ -15,7 +15,7 @@ typedef struct {
 } ProcessInfo;
 
 
-ProcessInfo* extractArchive(const char* filename, int* numProcesses);
+ProcessInfo* extractProcesses(const char* filename, int* numProcesses);
 void createOutput(int argc, char *argv[]);
 void fcfs_algorithm(ProcessInfo ps[]);
 void sjf_algorithm();
@@ -80,7 +80,7 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
     return is_text;
 }
 
-ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
+ProcessInfo* extractProcesses(const char* filename, int* numProcesses) {
     if (!isTextFile(filename)) {
         printf("Invalid file format. Please provide a text file.\n");
         exit(1);
