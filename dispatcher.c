@@ -81,24 +81,26 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
 }
 
 ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
-    if (!isTextFile(filename)) {
-        printf("Invalid file format. Please provide a text file.\n");
-        exit(1);
+   if (!isTextFile(filename)) {
+        printf("Error: Not a text file.\n");
+        return NULL;
     }
 
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Failed to open %s.\n", filename);
-        exit(1);
+        printf("Error: Cannot open the file.\n");
+        return NULL;
     }
 
-    // Count the number of numProcesses in the file
+    // Count the number of lines
     int lines = 0;
-    while (fgetc(file) != EOF) {
-        if (fgetc(file) == '\n') {
+    char ch;
+    while ((ch = fgetc(file)) != EOF) {
+        if (ch == '\n') {
             lines++;
         }
     }
+
     rewind(file);
 
     // Allocate memory for the array of ProcessInfo structs
