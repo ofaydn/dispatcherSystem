@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     int numProcesses;
-    ProcessInfo* processes = extractProcesses(argv[1], &numProcesses);
+    ProcessInfo* processes = extractArchive(argv[1], &numProcesses);
 
     if (processes == NULL) {
         return 1; // Extraction failed
