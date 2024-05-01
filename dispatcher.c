@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     int numProcesses;
-    ProcessInfo* processes = extractArchive(argv[1], &numProcesses);
+    ProcessInfo* processes = extractProcesses(argv[1], &numProcesses);
 
     if (processes == NULL) {
         return 1; // Extraction failed
@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Free the memory allocated for the processArr
-   for (int i = 0; i < numProcesses; i++) {
+    for (int i = 0; i < numProcesses; i++) {
         free(processes[i].process_number);
     }
     free(processes);
@@ -81,64 +81,64 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
 }
 
 ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
-   if (!isTextFile(filename)) {
-        printf("Error: Not a text file.\n");
-        return NULL;
+    if (!isTextFile(filename)) {
+        printf("Invalid file format. Please provide a text file.\n");
+        exit(1);
     }
 
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Error: Cannot open the file.\n");
-        return NULL;
+        printf("Failed to open %s.\n", filename);
+        exit(1);
     }
 
-    // Count the number of lines
+    // Count the number of numProcesses in the file
     int lines = 0;
-    char ch;
-    while ((ch = fgetc(file)) != EOF) {
-        if (ch == '\n') {
+    while (fgetc(file) != EOF) {
+        if (fgetc(file) == '\n') {
             lines++;
         }
     }
-
     rewind(file);
 
     // Allocate memory for the array of ProcessInfo structs
-    ProcessInfo* processes = (ProcessInfo*) malloc(lines * sizeof(ProcessInfo));
+    ProcessInfo* processes = malloc(lines * sizeof(ProcessInfo));
     if (processes == NULL) {
-        printf("Error: Memory allocation failed.\n");
+        printf("Memory allocation failed.\n");
         fclose(file);
-        return NULL;
+	exit(1);
     }
 
-    char line[256];
-    int index = 0;
-    while (fgets(line, sizeof(line), file)) {
-        ProcessInfo process = {0};  // Zero-initialize the struct to avoid garbage values
-
-        // Allocate memory for the process_number and ensure it has enough space
+	char line[256];
+	int index = 0;
+     while (fgets(line, sizeof(line), file)) {
+        ProcessInfo process;
         char* token = strtok(line, ",");
-        if (token) {
-            process.process_number = strdup(token);  // Use strdup to allocate and copy
-            if (!process.process_number) {
-                printf("Error: Memory allocation failed for process_number.\n");
-                fclose(file);
-                free(processes);
-                return NULL;
-            }
-        }
+        
+        process.process_number = strdup(token);
 
-        // Parse the other fields
         process.arrival_time = atoi(strtok(NULL, ","));
         process.priority = atoi(strtok(NULL, ","));
-        process.burst_time = atoi(strtok(NULL, ","));  // Handle potential trailing spaces
-        process.ram = atoi(strtok(NULL, ","));  // Continue parsing
-        process.cpu_rate = atoi(strtok(NULL, ","));  // Last field
+        process.burst_time = atoi(strtok(NULL, ","));
+        process.ram = atoi(strtok(NULL, ","));
+        process.cpu_rate = atoi(strtok(NULL, ",")); // Last value
 
-        processes[index++] = process;  // Add to the array
+        processes[index++] = process;
     }
 
     fclose(file);
+
+    // Sort processes by priority (0 > 1 > 2 > 3)
+    for (int i = 0; i < lines - 1; i++) {
+        for (int j = 0; j < lines - i - 1; j++) {
+            if (processes[j].priority > processes[j + 1].priority) {
+                ProcessInfo temp = processes[j];
+                processes[j] = processes[j + 1];
+                processes[j + 1] = temp;
+            }
+        }
+    }
+
     *numProcesses = lines;
     return processes;
 }
