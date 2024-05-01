@@ -121,9 +121,10 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
         if (process.process_number == NULL) {
             printf("Memory allocation failed.\n");
             exit(1);
-        }
+        }printf("prescan");
         fscanf(file, "%s %d %d %d %d %d", process.process_number, &process.arrival_time, &process.priority, &process.burst_time, &process.ram, &process.cpu_rate);
-        processes[i] = process;
+	printf("postscan");
+	processes[i] = process;
     }
 
     fclose(file);
