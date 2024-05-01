@@ -99,9 +99,8 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
 
     // Count the number of numProcesses in the file
     int lines = 0;
-    char ch;
-    while ((ch = fgetc(file)) != EOF) {
-        if (ch == '\n') {
+    while (fgetc(file) != EOF) {
+        if (fgetc(file) == '\n') {
             lines++;
         }
     }
@@ -111,9 +110,12 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
     ProcessInfo* processes = malloc(lines * sizeof(ProcessInfo));
     if (processes == NULL) {
         printf("Memory allocation failed.\n");
-        exit(1);
+        fclose(file);
+	exit(1);
     }
 
+	char line[256];
+	int index = 0;
     // Read the data from the file and populate the array of ProcessInfo structs
     for (int i = 0; i < lines; i++) {
         ProcessInfo process;
@@ -122,8 +124,8 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
             printf("Memory allocation failed.\n");
             exit(1);
         }printf("prescan");
-        fscanf(file, "%s %d %d %d %d %d", process.process_number, &process.arrival_time, &process.priority, &process.burst_time, &process.ram, &process.cpu_rate);
-	printf("postscan");
+        fscanf(file, "%[^,],%d,%d,%d,%d,%d", process.process_number, &process.arrival_time, &process.priority, &process.burst_time, &process.ram, &process.cpu_rate);
+	printf("postscan %d",process.process_number);
 	processes[i] = process;
     }
 
