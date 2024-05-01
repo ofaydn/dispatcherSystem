@@ -102,7 +102,6 @@ ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
     rewind(file);
 
     // Allocate memory for the array of ProcessInfo structs
-    ProcessInfo* processes = malloc(lines * sizeof(ProcessInfo));
     ProcessInfo* processes = (ProcessInfo*) malloc(lines * sizeof(ProcessInfo));
     if (processes == NULL) {
         printf("Error: Memory allocation failed.\n");
