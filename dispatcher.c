@@ -14,7 +14,8 @@ typedef struct {
     int cpu_rate;
 } ProcessInfo;
 
-void extractInput
+
+ProcessInfo* extractArchive(const char* filename, int* numProcesses);
 void createOutput(int argc, char *argv[]);
 void fcfs_algorithm(ProcessInfo ps[]);
 void sjf_algorithm();
@@ -29,8 +30,35 @@ int main(int argc, char *argv[]) {
         printf("cpu_schedular <input.txt>:\n");
         exit(1);
     }
-    create_archive(argc, argv);
-    
+    int numProcesses = 0;
+    ProcessInfo* processArr = extractArchive(argv[1], &numProcesses);
+    for (int i = 0; i < numProcesses - 1; i++) {
+        for (int j = 0; j < numProcesses - i - 1; j++) {
+            if (processArr[j].priority > processArr[j + 1].priority) {
+                ProcessInfo temp = processArr[j];
+                processArr[j] = processArr[j + 1];
+                processArr[j + 1] = temp;
+            }
+        }
+    }
+
+    // Print the processes consecutively
+    for (int i = 0; i < numProcesses; i++) {
+        printf("Process Number: %s\n", processArr[i].process_number);
+        printf("Arrival Time: %d\n", processArr[i].arrival_time);
+        printf("Priority: %d\n", processArr[i].priority);
+        printf("Burst Time: %d\n", processArr[i].burst_time);
+        printf("RAM: %d\n", processArr[i].ram);
+        printf("CPU Rate: %d\n", processArr[i].cpu_rate);
+        printf("\n");
+    }
+
+    // Free the memory allocated for the processArr
+    for (int i = 0; i < numProcesses; i++) {
+        free(processArr[i].process_number);
+    }
+    free(processArr);
+
     return 0;
 }
 
@@ -57,59 +85,48 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
     return is_text;
 }
 
-void extract_archive(char *input_file) {
-    FILE *file = fopen(input_file, "r");
+ProcessInfo* extractArchive(const char* filename, int* numProcesses) {
+    if (!isTextFile(filename)) {
+        printf("Invalid file format. Please provide a text file.\n");
+        exit(1);
+    }
+
+    FILE* file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Failed to open archive %s.\n",input_file);
+        printf("Failed to open %s.\n", filename);
         exit(1);
     }
-    char buffer[11]; // Buffer to store the first 10 characters (+1 for null terminator)
-    if (fscanf(file, "%10s", buffer) != 1) {
-        printf("Failed to read archive  section size.\n");
-        fclose(file);
+
+    // Count the number of numProcesses in the file
+    int lines = 0;
+    char ch;
+    while ((ch = fgetc(file)) != EOF) {
+        if (ch == '\n') {
+            lines++;
+        }
+    }
+    rewind(file);
+
+    // Allocate memory for the array of ProcessInfo structs
+    ProcessInfo* processes = malloc(lines * sizeof(ProcessInfo));
+    if (processes == NULL) {
+        printf("Memory allocation failed.\n");
         exit(1);
     }
-    int archiveSize = atoi(buffer);
-    int num_files = 0;
-    ProcessInfo processes[MAX_FILES];
-    if (fseek(file, 10, SEEK_SET) != 0) {
-        printf("Failed to seek to the 11th character.\n");
-        fclose(file);
-        exit(1);
+
+    // Read the data from the file and populate the array of ProcessInfo structs
+    for (int i = 0; i < lines; i++) {
+        ProcessInfo process;
+        process.process_number = malloc(10 * sizeof(char));
+        if (process.process_number == NULL) {
+            printf("Memory allocation failed.\n");
+            exit(1);
+        }
+        fscanf(file, "%s %d %d %d %d %d", process.process_number, &process.arrival_time, &process.priority, &process.burst_time, &process.ram, &process.cpu_rate);
+        processes[i] = process;
     }
-    fseek(file,10,SEEK_SET);
-    char buff[archiveSize + 1 -10];
-    size_t sectionLength = archiveSize -10;
-    size_t bytes_read = fread(buff,sizeof(char),sectionLength,file);
-    buff[bytes_read] = '\0'; //null terminate
-    //printf("%s\n",buff);
-    if (buff != NULL && num_files < MAX_FILES) {
-        char *token = strtok(buff, "!|");
-        while(token !=NULL){
-        	files[num_files].name = malloc(strlen(token) + 1);
-		if (sscanf(token, "%[^,],%d,%d", files[num_files].name, &files[num_files].perms, &files[num_files].size) == 3) {
-		        num_files++;        
-		    }
-        token = strtok(NULL, "!|");
-        }  
-    
-    fseek(file,archiveSize,SEEK_SET);
-    int i;
-    for (i = 0; i < num_files; ++i) {
-        fscanf(file, "%d\n", &files[i].size);
-        files[i].content = malloc(files[i].size + 1); // Allocate memory
-        if (files[i].content != NULL) {
-            if (fgets(files[i].content, files[i].size + 1, file) != NULL) {
-                // Remove newline character if present
-                size_t len = strlen(files[i].content);
-                if (len > 0 && files[i].content[len - 1] == '\n') {
-                    files[i].content[len - 1] = '\0';
-                }
-            } else {
-                fprintf(stderr, "Failed to read content for file %d.\n", i + 1);
-                free(files[i].content); // Free memory if content reading fails
-                break;
-            }
-        } else {
-            fprintf(stderr, "Memory allocation failed for file %d.\n", i + 1);
-            brex
+
+    fclose(file);
+    *numProcesses = lines;
+    return processes;
+}
