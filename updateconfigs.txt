@@ -1,0 +1,3 @@
+input file reading needs to be corrected
+after algorithms will be written
+this is a test text for branch operations in git
