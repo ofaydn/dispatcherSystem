@@ -108,7 +108,7 @@ int isDirectory(const char *path) {
 int getFilePermissions(const char *filename) {
     struct stat st;
     if (stat(filename, &st) == 0) {
-        return st.st_mode & (S_IRWXU | S_IRWXG | S_IRWXO); 
+        return st.st_mode & (S_IRWXU); 
         // Return r, w, and x file permissions 
     }
     return -1; // Error occurred while getting permissions
