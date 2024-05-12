@@ -2,63 +2,66 @@
 #define QUANTUM8 8
 #define QUANTUM16 16
 
-void fcfs(ProcessInfo *pr0, int n, int CPU1_RAM, int MAX_CPU_RATE , FILE *file) {
+void fcfs(ProcessInfo *prLists, int n, int CPU1_RAM, int MAX_CPU_RATE , FILE *file) {
     int total_ram = 0;
     int total_cpu_rate = 0;
 
     // Sort the processes by arrival time
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
-            if (pr0[i].arrival_time > pr0[j].arrival_time) {
-                ProcessInfo temp = pr0[i];
-                pr0[i] = pr0[j];
-                pr0[j] = temp;
+            if (prLists[i].arrival_time > prLists[j].arrival_time) {
+                ProcessInfo temp = prLists[i];
+                prLists[i] = prLists[j];
+                prLists[j] = temp;
             }
         }
     }
+    char* terminatedQueue[n];
     char buffer[256];
     // Execute the processes
     for (int i = 0; i < n; i++) {
         // Check if the process can be executed
-        if (total_ram + pr0[i].ram <= CPU1_RAM && total_cpu_rate + pr0[i].cpu_rate <= MAX_CPU_RATE) {
-            sprintf(buffer,"Process %s is queued to be assigned to CPU-1.\n", pr0[i].process_number);
+        if (total_ram + prLists[i].ram <= CPU1_RAM && total_cpu_rate + prLists[i].cpu_rate <= MAX_CPU_RATE) {
+            sprintf(buffer,"Process %s is queued to be assigned to CPU-1.\n", prLists[i].process_number);
             fprintf(file, "%s", buffer);
-            sprintf(buffer,"Process %s is assigned to CPU-1.\n", pr0[i].process_number);
+            sprintf(buffer,"Process %s is assigned to CPU-1.\n", prLists[i].process_number);
             fprintf(file, "%s", buffer);
 
-            // Update the total RAM and CPU rate
-            total_ram += pr0[i].ram;
-            total_cpu_rate += pr0[i].cpu_rate;
+            total_ram += prLists[i].ram;
+            total_cpu_rate += prLists[i].cpu_rate;
 
-            // Simulate the execution of the process
-            for (int j = 0; j < pr0[i].burst_time; j++) {
-                // Here you can add code to simulate the execution of the process
-            }
-
-            sprintf(buffer,"Process %s is completed and terminated.\n", pr0[i].process_number);
+            sprintf(buffer,"Process %s is completed and terminated.\n", prLists[i].process_number);
             fprintf(file, "%s\n", buffer);
+            terminatedQueue[i] = prLists[i].process_number;
             // Update the total RAM and CPU rate
-            total_ram -= pr0[i].ram;
-            total_cpu_rate -= pr0[i].cpu_rate;
+            total_ram -= prLists[i].ram;
+            total_cpu_rate -= prLists[i].cpu_rate;
         } else {
-            sprintf(buffer,"Process %s cannot be executed due to insufficient resources.\n", pr0[i].process_number);
+            sprintf(buffer,"Process %s cannot be executed due to insufficient resources.\n", prLists[i].process_number);
             fprintf(file, "%s\n", buffer);
         }
     }
+    // Print the CPU-1 queue
+    printf("CPU-1 que1(priority-0) (FCFS)->");
+    for (int i = 0; i < n; i++) {
+        printf("%s-", terminatedQueue[i]);
+    }
+    printf("\n");
+    
 }
 
-void sjf(ProcessInfo *pr0, int n, int CPU2_RAM, int MAX_CPU_RATE , FILE *file) {
+void sjf(ProcessInfo *prLists, int n, int CPU2_RAM, int MAX_CPU_RATE , FILE *file) {
     int total_ram = 0;
     int total_cpu_rate = 0;
     char buffer[256];
-
+    char* terminatedQueue[n];
     // Sort the processes by burst time
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
-            if (pr0[i].burst_time > pr0[j].burst_time) {
-                ProcessInfo temp = pr0[i];
-                pr0[i] = pr0[j];
-                pr0[j] = temp;
+            if (prLists[i].burst_time > prLists[j].burst_time) {
+                ProcessInfo temp = prLists[i];
+                prLists[i] = prLists[j];
+                prLists[j] = temp;
             }
         }
     }
@@ -66,30 +69,91 @@ void sjf(ProcessInfo *pr0, int n, int CPU2_RAM, int MAX_CPU_RATE , FILE *file) {
     // Execute the processes
     for (int i = 0; i < n; i++) {
         // Check if the process can be executed
-        if (total_ram + pr0[i].ram <= CPU2_RAM && total_cpu_rate + pr0[i].cpu_rate <= MAX_CPU_RATE) {
-            sprintf(buffer, "Process %s is placed in the que1 queue to be assigned to CPU-2.\n", pr0[i].process_number);
+        if (total_ram + prLists[i].ram <= CPU2_RAM && total_cpu_rate + prLists[i].cpu_rate <= MAX_CPU_RATE) {
+            sprintf(buffer, "Process %s is placed in the que1 queue to be assigned to CPU-2.\n", prLists[i].process_number);
             fprintf(file, "%s", buffer);
-            sprintf(buffer, "Process %s is assigned to CPU-2.\n", pr0[i].process_number);
+            sprintf(buffer, "Process %s is assigned to CPU-2.\n", prLists[i].process_number);
             fprintf(file, "%s", buffer);
 
             // Update the total RAM and CPU rate
-            total_ram += pr0[i].ram;
-            total_cpu_rate += pr0[i].cpu_rate;
+            total_ram += prLists[i].ram;
+            total_cpu_rate += prLists[i].cpu_rate;
 
             // Simulate the execution of the process
             
 
-            sprintf(buffer, "The operation of process %s is completed and terminated.\n", pr0[i].process_number);
+            sprintf(buffer, "The operation of process %s is completed and terminated.\n", prLists[i].process_number);
+            terminatedQueue[i] = prLists[i].process_number;
            fprintf(file, "%s\n", buffer);
 
             // Update the total RAM and CPU rate
-            total_ram -= pr0[i].ram;
-            total_cpu_rate -= pr0[i].cpu_rate;
+            total_ram -= prLists[i].ram;
+            total_cpu_rate -= prLists[i].cpu_rate;
         } else {
-            sprintf(buffer, "Process %s cannot be executed due to insufficient resources.\n", pr0[i].process_number);
+            sprintf(buffer, "Process %s cannot be executed due to insufficient resources.\n", prLists[i].process_number);
             fprintf(file, "%s\n", buffer);
         }
     }
+    printf("CPU-2 que2(priority-1) (FCFS)->");
+    for (int i = 0; i < n; i++) {
+        printf("%s-", terminatedQueue[i]);
+    }
+    printf("\n");
+}
+
+void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FILE *file,int QUANTUM) {
+    int total_ram = 0;
+    int queNum = 0;
+    if (QUANTUM == 8) {
+        queNum = 2;
+    } else if (QUANTUM == 16) {
+        queNum = 3;
+    }
+    int total_cpu_rate = 0;
+    char buffer[256];
+    char* terminatedQueue[n];
+    // Execute the processes
+    int done = 0;  // To check if all processes are done
+    while (!done) {
+        done = 1;
+        for (int i = 0; i < n; i++) {
+            // Check if the process can be executed
+            if (prList[i].burst_time > 0 && total_ram + prList[i].ram <= CPU2_RAM && total_cpu_rate + prList[i].cpu_rate <= MAX_CPU_RATE) {
+                sprintf(buffer, "Process %s is placed in the que%d queue to be assigned to CPU-2.\n", prList[i].process_number, queNum);
+                fprintf(file, "%s", buffer);
+                sprintf(buffer, "Process %s is assigned to CPU-2.\n", prList[i].process_number);
+                fprintf(file, "%s", buffer);
+
+                // Update the total RAM and CPU rate
+                total_ram += prList[i].ram;
+                total_cpu_rate += prList[i].cpu_rate;
+
+                // Execute the process for the quantum time or until it's done
+                int quantum = prList[i].burst_time < QUANTUM ? prList[i].burst_time : QUANTUM;
+                prList[i].burst_time -= quantum;
+
+                // Check if the process is done
+                if (prList[i].burst_time > 0) {
+                    sprintf(buffer, "Process %s run until the defined quantum time and is queued again because the process is not completed.\n", prList[i].process_number);
+                    fprintf(file, "%s", buffer);
+                    done = 0;  // Not all processes are done
+                } else {
+                    sprintf(buffer, "Process %s is assigned to CPU-2, its operation is completed and terminated.\n", prList[i].process_number);
+                    terminatedQueue[i] = prList[i].process_number;
+                    fprintf(file, "%s\n", buffer);
+                }
+
+                // Update the total RAM and CPU rate
+                total_ram -= prList[i].ram;
+                total_cpu_rate -= prList[i].cpu_rate;
+            }
+        }
+    }
+    printf("CPU-2 que%d(priority-%d) (FCFS)->", queNum, queNum-1);
+    for (int i = 0; i < n; i++) {
+        printf("%s-", terminatedQueue[i]);
+    }
+    printf("\n");
 }
 
 int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 if its not
@@ -210,51 +274,3 @@ ProcessInfo* extractProcesses(const char* filename, int* numProcesses, int* Prio
     return processes;
 }
 
-void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FILE *file,int QUANTUM) {
-    int total_ram = 0;
-    int queNum = 0;
-    if (QUANTUM == 8) {
-        queNum = 2;
-    } else if (QUANTUM == 16) {
-        queNum = 3;
-    }
-    int total_cpu_rate = 0;
-    char buffer[256];
-
-    // Execute the processes
-    int done = 0;  // To check if all processes are done
-    while (!done) {
-        done = 1;
-        for (int i = 0; i < n; i++) {
-            // Check if the process can be executed
-            if (prList[i].burst_time > 0 && total_ram + prList[i].ram <= CPU2_RAM && total_cpu_rate + prList[i].cpu_rate <= MAX_CPU_RATE) {
-                sprintf(buffer, "Process %s is placed in the que%d queue to be assigned to CPU-2.\n", prList[i].process_number, queNum);
-                fprintf(file, "%s", buffer);
-                sprintf(buffer, "Process %s is assigned to CPU-2.\n", prList[i].process_number);
-                fprintf(file, "%s", buffer);
-
-                // Update the total RAM and CPU rate
-                total_ram += prList[i].ram;
-                total_cpu_rate += prList[i].cpu_rate;
-
-                // Execute the process for the quantum time or until it's done
-                int quantum = prList[i].burst_time < QUANTUM ? prList[i].burst_time : QUANTUM;
-                prList[i].burst_time -= quantum;
-
-                // Check if the process is done
-                if (prList[i].burst_time > 0) {
-                    sprintf(buffer, "Process %s run until the defined quantum time and is queued again because the process is not completed.\n", prList[i].process_number);
-                    fprintf(file, "%s", buffer);
-                    done = 0;  // Not all processes are done
-                } else {
-                    sprintf(buffer, "Process %s is assigned to CPU-2, its operation is completed and terminated.\n", prList[i].process_number);
-                    fprintf(file, "%s\n", buffer);
-                }
-
-                // Update the total RAM and CPU rate
-                total_ram -= prList[i].ram;
-                total_cpu_rate -= prList[i].cpu_rate;
-            }
-        }
-    }
-}
