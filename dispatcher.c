@@ -2,12 +2,8 @@
 #define CPU1_RAM 512 
 #define CPU2_RAM 1536 
 #define MAX_CPU_RATE 100
-
-void createOutput(int argc, char *argv[]);
-
-void sjf_algorithm();
-void rr8_algorithm();
-void rr16_algorithm();
+#define QUANTUM8 8
+#define QUANTUM16 16
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {				//Usage check 
@@ -78,6 +74,8 @@ int main(int argc, char *argv[]) {
     
     fcfs(pr0, PriorityCounts[0], CPU1_RAM, MAX_CPU_RATE, file);
     sjf(pr1, PriorityCounts[1], CPU2_RAM, MAX_CPU_RATE, file);
+    rr_algorithm(pr2, PriorityCounts[2], CPU2_RAM, MAX_CPU_RATE, file, QUANTUM8);
+    rr_algorithm(pr3, PriorityCounts[3], CPU2_RAM, MAX_CPU_RATE, file, QUANTUM16);
 
 
     // Free the memory allocated for the processArr
