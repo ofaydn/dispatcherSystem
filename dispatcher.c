@@ -21,22 +21,6 @@ int main(int argc, char *argv[]) {
         return 1; // Extraction failed
     }
 
-    //printing the processes
-    /*
-    for(int i =0 ; i< numProcesses;i++)
-    {
-        printf("Process: %s\n", processes[i].process_number);
-        printf("Arrival Time: %d\n", processes[i].arrival_time);
-        printf("Priority: %d\n", processes[i].priority);
-        printf("Burst Time: %d\n", processes[i].burst_time);
-        printf("RAM: %d\n", processes[i].ram);
-        printf("CPU Rate: %d\n", processes[i].cpu_rate);
-        printf("\n");
-    }
-    for(int i = 0; i < 4; i++) {
-        printf("Priority %d: %d\n", i, PriorityCounts[i]);
-    }*/
-
 
     // Sort the processes based on their priority
     ProcessInfo pr0[PriorityCounts[0]];

@@ -242,7 +242,6 @@ ProcessInfo* extractProcesses(const char* filename, int* numProcesses, int* Prio
             processCount++;
         }
     }
-    printf("Number of processes: %d\n", processCount);
     rewind(file);
     // Allocate memory for the array of ProcessInfo structs
     ProcessInfo* processes = malloc(processCount * sizeof(ProcessInfo));
