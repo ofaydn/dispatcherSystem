@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T20:25:52.749Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="LRN4YwD-3tBOIGX3nIaY" version="24.4.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-15T09:30:50.857Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="krzzLw8PD8ilci2DKyfY" version="24.4.0" type="device">
   <diagram name="Page-1" id="S_q_hAhe5GKeTH7Nttn9">
-    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1585" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,13 +8,17 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-1" value="Start the program" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="354" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-3" target="8O5WfbR8zbWffjnatt95-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-3" target="8O5WfbR8zbWffjnatt95-62" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="676" y="230" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-65" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8O5WfbR8zbWffjnatt95-64" vertex="1" connectable="0">
           <mxGeometry x="-0.2427" relative="1" as="geometry">
@@ -22,28 +26,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-3" value="Program started with a file?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="354" y="170" width="120" height="120" as="geometry" />
+          <mxGeometry x="360" y="170" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-8" target="8O5WfbR8zbWffjnatt95-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-8" value="Define variables for number of processes and processes riority counts" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="354" y="320" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-10" target="8O5WfbR8zbWffjnatt95-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-10" value="Define array of processes which will be extracted from extractProcess function, giving file name, number of processes variable&#39;s address and PriorityCounts array" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="314" y="460" width="200" height="100" as="geometry" />
+          <mxGeometry x="320" y="460" width="200" height="100" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-12" target="8O5WfbR8zbWffjnatt95-62" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="690" as="targetPoint" />
+            <mxPoint x="506" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8O5WfbR8zbWffjnatt95-18" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8O5WfbR8zbWffjnatt95-17" vertex="1" connectable="0">
-          <mxGeometry x="-0.3067" y="-3" relative="1" as="geometry">
-            <mxPoint x="-93" y="52" as="offset" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-38" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8O5WfbR8zbWffjnatt95-17">
+          <mxGeometry x="-0.7348" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-12" target="8O5WfbR8zbWffjnatt95-20" edge="1">
@@ -55,13 +59,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-12" value="Is input file a text file ?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="374" y="650" width="80" height="80" as="geometry" />
+          <mxGeometry x="365" y="630" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8O5WfbR8zbWffjnatt95-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-20" target="8O5WfbR8zbWffjnatt95-62" edge="1">
+        <mxCell id="8O5WfbR8zbWffjnatt95-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-20" target="8O5WfbR8zbWffjnatt95-62" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="835" as="targetPoint" />
+            <mxPoint x="506" y="835" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="640" y="835" />
+              <mxPoint x="676" y="840" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -79,22 +83,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-20" value="Is text file in good condition?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="359" y="780" width="110" height="110" as="geometry" />
+          <mxGeometry x="360" y="780" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-5" value="Stop the program" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="600" y="30" width="80" height="80" as="geometry" />
+          <mxGeometry x="636" y="20" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-30" target="8O5WfbR8zbWffjnatt95-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-30" value="Define character count and assign filesize to a variable&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="354" y="940" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="940" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-41" target="8O5WfbR8zbWffjnatt95-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-41" value="Set character to file&#39;s character in next order" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="354" y="1030" width="120" height="60" as="geometry" />
+          <mxGeometry x="360" y="1030" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-43" target="8O5WfbR8zbWffjnatt95-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -106,7 +110,7 @@
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-43" target="8O5WfbR8zbWffjnatt95-53" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="414" y="1240" as="targetPoint" />
+            <mxPoint x="420" y="1240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-55" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8O5WfbR8zbWffjnatt95-54" vertex="1" connectable="0">
@@ -115,12 +119,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-43" value="Is character EOF?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="374" y="1120" width="80" height="80" as="geometry" />
+          <mxGeometry x="380" y="1120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-45" target="8O5WfbR8zbWffjnatt95-41" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="520" y="1060" />
+              <mxPoint x="526" y="1060" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -138,16 +142,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-45" value="Is character &quot;\n&quot;?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="480" y="1120" width="80" height="80" as="geometry" />
+          <mxGeometry x="486" y="1120" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-50" value="Increase process count" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="590" y="1140" width="80" height="40" as="geometry" />
+          <mxGeometry x="596" y="1140" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-53" target="8O5WfbR8zbWffjnatt95-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-53" value="Allocate memory for the processes array using process count and size of ProcessInfo struct" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="344" y="1230" width="140" height="70" as="geometry" />
+          <mxGeometry x="350" y="1230" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-56" target="8O5WfbR8zbWffjnatt95-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -166,29 +170,270 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-56" value="Is allocated memory null?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="374" y="1330" width="80" height="80" as="geometry" />
+          <mxGeometry x="380" y="1330" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-58" target="8O5WfbR8zbWffjnatt95-62" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="680" y="220" as="targetPoint" />
+            <mxPoint x="686" y="220" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="700" y="1370" />
-              <mxPoint x="700" y="230" />
-              <mxPoint x="670" y="230" />
+              <mxPoint x="721" y="1370" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-58" value="Close the file" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="514" y="1340" width="120" height="60" as="geometry" />
+          <mxGeometry x="520" y="1340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="8O5WfbR8zbWffjnatt95-62" target="8O5WfbR8zbWffjnatt95-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8O5WfbR8zbWffjnatt95-62" value="Print detailed error message" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="580" y="130" width="120" height="60" as="geometry" />
+          <mxGeometry x="586" y="130" width="180" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="8O5WfbR8zbWffjnatt95-66" value="" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="354" y="1450" width="120" height="60" as="geometry" />
+        <mxCell id="z-P7e2UidqStnOpTgpDv-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8O5WfbR8zbWffjnatt95-66" target="z-P7e2UidqStnOpTgpDv-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8O5WfbR8zbWffjnatt95-66" value="Define buff, sectionLength and variable for counting read bytes." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-1" target="z-P7e2UidqStnOpTgpDv-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-1" value="Parse processes&#39; informations from input file to the array in the program." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="510" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-3" target="z-P7e2UidqStnOpTgpDv-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-3" value="Update process counts through the parsing function" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="676" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-5" target="z-P7e2UidqStnOpTgpDv-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-5" value="Sort processes based on their priority number using Bubble Sort Algorithm" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="856" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-7" target="z-P7e2UidqStnOpTgpDv-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-7" value="Return processes" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="z-P7e2UidqStnOpTgpDv-9" target="8O5WfbR8zbWffjnatt95-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="175" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1241" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-12" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="z-P7e2UidqStnOpTgpDv-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.8893" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-9" target="z-P7e2UidqStnOpTgpDv-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1241" y="1600" />
+              <mxPoint x="1165" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-9" value="Is processes array NULL?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1185.5" y="1425" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-13" target="z-P7e2UidqStnOpTgpDv-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-13" value="Define process arrays to group them based on their priorities." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1105" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-15" target="z-P7e2UidqStnOpTgpDv-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-15" value="Distribute processes to proper priority arrays to make it more maintainable" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="944" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-17" target="z-P7e2UidqStnOpTgpDv-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-17" value="Create a text file named &quot;output.txt&quot;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-19" target="a6jRXviSZzTBCwNXgs7o-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="z-P7e2UidqStnOpTgpDv-19" target="a6jRXviSZzTBCwNXgs7o-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-P7e2UidqStnOpTgpDv-19" value="Perform First Come First serve algorithm with priority 0 processes, maximum ram rate, maximum cpu rate and output file" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="380" y="1660" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-1" target="a6jRXviSZzTBCwNXgs7o-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-1" value="Define total ram and cpu rate to keep track of usage" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="1810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-3" target="a6jRXviSZzTBCwNXgs7o-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a6jRXviSZzTBCwNXgs7o-3" target="xDgsFRM5nRUjccw4thwC-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-3" value="Perform Shortest Job First algorith with priority 1 processes, maximum ram rate for cpu2, maximum cpu rate and output file" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="780" y="1663.5" width="166" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a6jRXviSZzTBCwNXgs7o-5" target="a6jRXviSZzTBCwNXgs7o-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-5" value="Perform round robin algorithm with priority 2 processes, maximum ram rate for cpu2, maximıum cpu rate, output file and quantum constant 8." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="1660.5" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-7" value="Perform round robin algorithm with priority 3 processes, maximum ram rate for cpu2, maximıum cpu rate, output file and quantum constant 16." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1317" y="1660.5" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-9" target="a6jRXviSZzTBCwNXgs7o-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-9" value="Sort processes based on their arrival times with applying Bubble Sort Algorithm." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="1805" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a6jRXviSZzTBCwNXgs7o-12" target="xDgsFRM5nRUjccw4thwC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6jRXviSZzTBCwNXgs7o-12" value="Define a char array for terminated queues, another char array for buffer and an integer i." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="255" y="1920" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-27" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-6">
+          <mxGeometry x="-0.0253" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-30" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-29">
+          <mxGeometry x="-0.1467" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-1" value="Is i smaller than process count?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="2030" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-9" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-8">
+          <mxGeometry x="-0.0197" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-12" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-11">
+          <mxGeometry x="-0.2072" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-5" value="Is total used ram smaller or equal than max ram and is total used ram smaller or equal than max available ram?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="2170" width="152.5" height="152.5" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-7" target="xDgsFRM5nRUjccw4thwC-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="13" y="2070" />
+              <mxPoint x="100" y="2070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-7" value="Print error for insufficient resources." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-47.5" y="2216.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-10" target="xDgsFRM5nRUjccw4thwC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-10" value="Put process to the queue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="183.75" y="2350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-13" target="xDgsFRM5nRUjccw4thwC-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-13" value="Assign process to proper CPU" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="2350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-15" target="xDgsFRM5nRUjccw4thwC-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-15" value="Add process&#39; ram and cpu rate to total used ram and cpu" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="2440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-17" target="xDgsFRM5nRUjccw4thwC-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-17" value="Complete and terminate the process" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="183.75" y="2440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-19" target="xDgsFRM5nRUjccw4thwC-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-19" value="Add the process to the terminatedQueue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="183.75" y="2530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-21" target="xDgsFRM5nRUjccw4thwC-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="2480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="23" y="2550" />
+              <mxPoint x="-60" y="2550" />
+              <mxPoint x="-60" y="2070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-21" value="Subtract used resources from necessary variables to maintain efficiency" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="2530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-23" target="xDgsFRM5nRUjccw4thwC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-23" value="Add 1 to i" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="2040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-28" target="xDgsFRM5nRUjccw4thwC-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-28" value="Print termination queue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-31" target="z-P7e2UidqStnOpTgpDv-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="2210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-31" value="Finish algorithm" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-36" target="xDgsFRM5nRUjccw4thwC-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-36" value="Define total ram and cpu rate to keep track of usage" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="803" y="1820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-39" target="xDgsFRM5nRUjccw4thwC-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-39" value="Sort processes based on their burst times with applying Bubble Sort Algorithm." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="606" y="1815" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-41" value="Define a char array for terminated queues, another char array for buffer and an integer i." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="611" y="1920" width="130" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

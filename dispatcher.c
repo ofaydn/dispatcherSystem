@@ -18,6 +18,7 @@ int main(int argc, char *argv[]) {
     ProcessInfo* processes = extractProcesses(argv[1], &numProcesses, PriorityCounts);
 
     if (processes == NULL) {
+        printf("Error: Unable to extract processes from the file.\n");
         return 1; // Extraction failed
     }
 

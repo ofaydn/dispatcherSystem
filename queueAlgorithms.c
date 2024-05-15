@@ -250,7 +250,6 @@ ProcessInfo* extractProcesses(const char* filename, int* numProcesses, int* Prio
         fclose(file);
 	exit(1);
     }
-    int processesIndex = 0;
     char buff[inputSize + 1];
     size_t sectionLength = inputSize;
     size_t bytesRead = fread(buff, sizeof(char), sectionLength, file);
