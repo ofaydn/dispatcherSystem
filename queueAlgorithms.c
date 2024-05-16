@@ -103,13 +103,27 @@ void sjf(ProcessInfo *prLists, int n, int CPU2_RAM, int MAX_CPU_RATE , FILE *fil
 
 void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FILE *file,int QUANTUM) {
     int total_ram = 0;
-    int queNum = 0;
-    if (QUANTUM == 8) {
-        queNum = 2;
-    } else if (QUANTUM == 16) {
-        queNum = 3;
-    }
     int total_cpu_rate = 0;
+    int queueNumber = 0;
+
+    /*switch(QUANTUM){
+        case 8:
+            queueNumber =2;
+        case 16:
+            queueNumber = 3;
+        default:
+            printf("Invalid quantum number\n");
+            exit(1);
+    }*/
+    if (QUANTUM == 8) {
+        queueNumber = 2;
+    } else if (QUANTUM == 16) {
+        queueNumber = 3;
+    }else{
+        printf("Invalid quantum number\n");
+        exit(1);
+    }
+    
     char buffer[256];
     char* terminatedQueue[n];
     // Execute the processes
@@ -119,7 +133,7 @@ void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FI
         for (int i = 0; i < n; i++) {
             // Check if the process can be executed
             if (prList[i].burst_time > 0 && total_ram + prList[i].ram <= CPU2_RAM && total_cpu_rate + prList[i].cpu_rate <= MAX_CPU_RATE) {
-                sprintf(buffer, "Process %s is placed in the que%d queue to be assigned to CPU-2.\n", prList[i].process_number, queNum);
+                sprintf(buffer, "Process %s is placed in the que%d queue to be assigned to CPU-2.\n", prList[i].process_number, queueNumber);
                 fprintf(file, "%s", buffer);
                 sprintf(buffer, "Process %s is assigned to CPU-2.\n", prList[i].process_number);
                 fprintf(file, "%s", buffer);
@@ -149,7 +163,7 @@ void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FI
             }
         }
     }
-    printf("CPU-2 que%d(priority-%d) (FCFS)->", queNum, queNum-1);
+    printf("CPU-2 que%d(priority-%d) (FCFS)->", queueNumber, queueNumber-1);
     for (int i = 0; i < n; i++) {
         printf("%s-", terminatedQueue[i]);
     }

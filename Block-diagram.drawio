@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-15T09:30:50.857Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="krzzLw8PD8ilci2DKyfY" version="24.4.0" type="device">
+<mxfile host="Electron" modified="2024-05-16T15:20:36.997Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Dt-Ped78zRcVcRMqc8zu" version="24.4.0" type="device">
   <diagram name="Page-1" id="S_q_hAhe5GKeTH7Nttn9">
-    <mxGraphModel dx="1585" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="10687" dy="12260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,7 @@
             <mxPoint x="506" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-38" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8O5WfbR8zbWffjnatt95-17">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-38" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8O5WfbR8zbWffjnatt95-17" vertex="1" connectable="0">
           <mxGeometry x="-0.7348" y="2" relative="1" as="geometry">
             <mxPoint x="1" as="offset" />
           </mxGeometry>
@@ -268,28 +268,44 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="z-P7e2UidqStnOpTgpDv-19" value="Perform First Come First serve algorithm with priority 0 processes, maximum ram rate, maximum cpu rate and output file" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="380" y="1660" width="180" height="90" as="geometry" />
+          <mxGeometry x="10" y="1660.5" width="180" height="90" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-1" target="a6jRXviSZzTBCwNXgs7o-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-1" value="Define total ram and cpu rate to keep track of usage" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="410" y="1810" width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="1810.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-3" target="a6jRXviSZzTBCwNXgs7o-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a6jRXviSZzTBCwNXgs7o-3" target="xDgsFRM5nRUjccw4thwC-36">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-3" target="xDgsFRM5nRUjccw4thwC-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-3" value="Perform Shortest Job First algorith with priority 1 processes, maximum ram rate for cpu2, maximum cpu rate and output file" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="780" y="1663.5" width="166" height="83" as="geometry" />
+          <mxGeometry x="710.14" y="1663.5" width="166" height="83" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="a6jRXviSZzTBCwNXgs7o-5" target="a6jRXviSZzTBCwNXgs7o-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-5" target="Z3DZMybaHigUyCzGkq5z-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="1770" />
+              <mxPoint x="1039" y="1770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-5" value="Perform round robin algorithm with priority 2 processes, maximum ram rate for cpu2, maximıum cpu rate, output file and quantum constant 8." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1080" y="1660.5" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="a6jRXviSZzTBCwNXgs7o-7" target="Z3DZMybaHigUyCzGkq5z-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1407" y="1770" />
+              <mxPoint x="1039" y="1770" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-7" value="Perform round robin algorithm with priority 3 processes, maximum ram rate for cpu2, maximıum cpu rate, output file and quantum constant 16." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1317" y="1660.5" width="180" height="90" as="geometry" />
@@ -298,142 +314,501 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-9" value="Sort processes based on their arrival times with applying Bubble Sort Algorithm." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="250" y="1805" width="140" height="70" as="geometry" />
+          <mxGeometry x="-120" y="1805.5" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a6jRXviSZzTBCwNXgs7o-12" target="xDgsFRM5nRUjccw4thwC-1">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="a6jRXviSZzTBCwNXgs7o-12" target="xDgsFRM5nRUjccw4thwC-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="a6jRXviSZzTBCwNXgs7o-12" value="Define a char array for terminated queues, another char array for buffer and an integer i." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="255" y="1920" width="130" height="65" as="geometry" />
+          <mxGeometry x="-115" y="1920.5" width="130" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-5">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-27" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-6">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-27" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xDgsFRM5nRUjccw4thwC-6" vertex="1" connectable="0">
           <mxGeometry x="-0.0253" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-28">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-1" target="xDgsFRM5nRUjccw4thwC-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-30" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-29">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-30" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xDgsFRM5nRUjccw4thwC-29" vertex="1" connectable="0">
           <mxGeometry x="-0.1467" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-1" value="Is i smaller than process count?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="2030" width="80" height="80" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-1" value="Is i smaller than process count?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="2030.5" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-7">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-9" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-8">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-9" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xDgsFRM5nRUjccw4thwC-8" vertex="1" connectable="0">
           <mxGeometry x="-0.0197" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-10">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-5" target="xDgsFRM5nRUjccw4thwC-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-12" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xDgsFRM5nRUjccw4thwC-11">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-12" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xDgsFRM5nRUjccw4thwC-11" vertex="1" connectable="0">
           <mxGeometry x="-0.2072" y="-5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-5" value="Is total used ram smaller or equal than max ram and is total used ram smaller or equal than max available ram?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="167.5" y="2170" width="152.5" height="152.5" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-5" value="Is total used ram smaller or equal than max ram and is total used ram smaller or equal than max available ram?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-202.5" y="2170.5" width="152.5" height="152.5" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-7" target="xDgsFRM5nRUjccw4thwC-23">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xDgsFRM5nRUjccw4thwC-7" target="xDgsFRM5nRUjccw4thwC-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="13" y="2070" />
-              <mxPoint x="100" y="2070" />
+              <mxPoint x="-357" y="2070.5" />
+              <mxPoint x="-270" y="2070.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-7" value="Print error for insufficient resources." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-47.5" y="2216.25" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-7" value="Print error for insufficient resources." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-417.5" y="2216.75" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-10" target="xDgsFRM5nRUjccw4thwC-13">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-10" target="xDgsFRM5nRUjccw4thwC-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-10" value="Put process to the queue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="183.75" y="2350" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-10" value="Put process to the queue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-186.25" y="2350.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-13" target="xDgsFRM5nRUjccw4thwC-15">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-13" target="xDgsFRM5nRUjccw4thwC-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-13" value="Assign process to proper CPU" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="22.5" y="2350" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-13" value="Assign process to the CPU-1" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-347.5" y="2350.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-15" target="xDgsFRM5nRUjccw4thwC-17">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-15" target="xDgsFRM5nRUjccw4thwC-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-15" value="Add process&#39; ram and cpu rate to total used ram and cpu" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="22.5" y="2440" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-15" value="Add process&#39; ram and cpu rate to total used ram and cpu" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-347.5" y="2440.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-17" target="xDgsFRM5nRUjccw4thwC-19">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-17" target="xDgsFRM5nRUjccw4thwC-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-17" value="Complete and terminate the process" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="183.75" y="2440" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-17" value="Complete and terminate the process" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-186.25" y="2440.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-19" target="xDgsFRM5nRUjccw4thwC-21">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-19" target="xDgsFRM5nRUjccw4thwC-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-19" value="Add the process to the terminatedQueue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="183.75" y="2530" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-19" value="Add the process to the terminatedQueue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-186.25" y="2530.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-21" target="xDgsFRM5nRUjccw4thwC-23">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="xDgsFRM5nRUjccw4thwC-21" target="xDgsFRM5nRUjccw4thwC-23" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="2480" as="targetPoint" />
+            <mxPoint x="-270" y="2480.5" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="23" y="2550" />
-              <mxPoint x="-60" y="2550" />
-              <mxPoint x="-60" y="2070" />
+              <mxPoint x="-347" y="2550.5" />
+              <mxPoint x="-430" y="2550.5" />
+              <mxPoint x="-430" y="2070.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-21" value="Subtract used resources from necessary variables to maintain efficiency" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="22.5" y="2530" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-21" value="Subtract used resources from necessary variables to maintain efficiency" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-347.5" y="2530.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-23" target="xDgsFRM5nRUjccw4thwC-1">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xDgsFRM5nRUjccw4thwC-23" target="xDgsFRM5nRUjccw4thwC-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-23" value="Add 1 to i" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="100" y="2040" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-23" value="Increase i by 1" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="2040.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-28" target="xDgsFRM5nRUjccw4thwC-31">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-28" target="xDgsFRM5nRUjccw4thwC-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-28" value="Print termination queue" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="410" y="2040" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-28" value="Print termination queue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2040.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-31" target="z-P7e2UidqStnOpTgpDv-19">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-31" target="z-P7e2UidqStnOpTgpDv-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="540" y="2210" />
+              <mxPoint x="170" y="2210.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-31" value="Finish algorithm" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="410" y="2180" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-31" value="Finish algorithm" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2180.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-36" target="xDgsFRM5nRUjccw4thwC-39">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xDgsFRM5nRUjccw4thwC-36" target="xDgsFRM5nRUjccw4thwC-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-36" value="Define total ram and cpu rate to keep track of usage" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="803" y="1820" width="120" height="60" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-36" value="Define total ram and cpu rate to keep track of usage" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="733.14" y="1820" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xDgsFRM5nRUjccw4thwC-39" target="xDgsFRM5nRUjccw4thwC-41">
+        <mxCell id="xDgsFRM5nRUjccw4thwC-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xDgsFRM5nRUjccw4thwC-39" target="xDgsFRM5nRUjccw4thwC-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-39" value="Sort processes based on their burst times with applying Bubble Sort Algorithm." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="606" y="1815" width="140" height="70" as="geometry" />
+        <mxCell id="xDgsFRM5nRUjccw4thwC-39" value="Sort processes based on their burst times with applying Bubble Sort Algorithm." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="536.14" y="1815" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="xDgsFRM5nRUjccw4thwC-41" value="Define a char array for terminated queues, another char array for buffer and an integer i." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="611" y="1920" width="130" height="65" as="geometry" />
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xDgsFRM5nRUjccw4thwC-41" target="Z3DZMybaHigUyCzGkq5z-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xDgsFRM5nRUjccw4thwC-41" value="Define a char array for terminated queues, another char array for buffer and an integer i." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="541.14" y="1920" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-5" target="Z3DZMybaHigUyCzGkq5z-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-2" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.0253" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-5" target="Z3DZMybaHigUyCzGkq5z-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-4" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.1467" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-5" value="Is i smaller than process count?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="566.14" y="2030.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-10" target="Z3DZMybaHigUyCzGkq5z-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-7" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.0197" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-10" target="Z3DZMybaHigUyCzGkq5z-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-9" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.2072" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-10" value="Is total used ram smaller or equal than max ram and is total used ram smaller or equal than max available ram?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="457.64" y="2170.5" width="152.5" height="152.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-12" target="Z3DZMybaHigUyCzGkq5z-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="303.14" y="2070.5" />
+              <mxPoint x="390.14" y="2070.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-12" value="Print error for insufficient resources." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="242.64" y="2216.75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-14" target="Z3DZMybaHigUyCzGkq5z-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-14" value="Put process to the queue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="473.89" y="2350.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-16" target="Z3DZMybaHigUyCzGkq5z-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-16" value="Assign process to the CPU-2" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="312.64" y="2350.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-18" target="Z3DZMybaHigUyCzGkq5z-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-18" value="Add process&#39; ram and cpu rate to total used ram and cpu" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="312.64" y="2440.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-20" target="Z3DZMybaHigUyCzGkq5z-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-20" value="Complete and terminate the process" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="473.89" y="2440.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-22" target="Z3DZMybaHigUyCzGkq5z-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-22" value="Add the process to the terminatedQueue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="473.89" y="2530.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-24" target="Z3DZMybaHigUyCzGkq5z-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390.14" y="2480.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="313.14" y="2550.5" />
+              <mxPoint x="230.14" y="2550.5" />
+              <mxPoint x="230.14" y="2070.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-24" value="Subtract used resources from necessary variables to maintain efficiency" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="312.64" y="2530.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-26" target="Z3DZMybaHigUyCzGkq5z-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-26" value="Increase i by 1" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="390.14" y="2040.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-28" target="Z3DZMybaHigUyCzGkq5z-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-28" value="Print termination queue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="700.14" y="2040.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-29" target="a6jRXviSZzTBCwNXgs7o-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="876.14" y="2200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-29" value="Finish algorithm" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="700.14" y="2180.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-32" target="Z3DZMybaHigUyCzGkq5z-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-32" value="Define total ram, total cpu rate and queueNumber" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="975.77" y="1780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-35" target="Z3DZMybaHigUyCzGkq5z-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-44" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-38" vertex="1" connectable="0">
+          <mxGeometry x="-0.0665" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-35" target="Z3DZMybaHigUyCzGkq5z-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-43" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-42" vertex="1" connectable="0">
+          <mxGeometry x="-0.0857" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-35" value="Is QUANTUM 8?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="942.5" y="1855.51" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-37" target="Z3DZMybaHigUyCzGkq5z-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-37" value="queueNumber = 2" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="922.5" y="1996.01" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-40" target="Z3DZMybaHigUyCzGkq5z-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-48" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-46" vertex="1" connectable="0">
+          <mxGeometry x="-0.2053" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-40" target="8O5WfbR8zbWffjnatt95-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1530" y="1896" />
+              <mxPoint x="1530" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-49" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-47" vertex="1" connectable="0">
+          <mxGeometry x="-0.9782" y="2" relative="1" as="geometry">
+            <mxPoint x="163" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-40" value="Is QUANTUM 16?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1072.5" y="1855.51" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-45" target="Z3DZMybaHigUyCzGkq5z-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-45" value="queueNumber = 16" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1052.5" y="1996.01" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-51" target="Z3DZMybaHigUyCzGkq5z-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-51" value="Define a char array for terminated queues, another char array for buffer and an integer named &quot;done&quot; to check if all processes are complete." style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="962.5" y="2095.51" width="170" height="98.25" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-54" target="Z3DZMybaHigUyCzGkq5z-59" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="946.2250000000004" y="2273.1766666666667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-61" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-60" vertex="1" connectable="0">
+          <mxGeometry x="-0.2762" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z3DZMybaHigUyCzGkq5z-54" target="ljsTq_bSfUcLJ_7WJwB0-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="2247" />
+              <mxPoint x="1160" y="2247" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-26" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ljsTq_bSfUcLJ_7WJwB0-25">
+          <mxGeometry x="-0.1316" y="-3" relative="1" as="geometry">
+            <mxPoint x="-2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-54" value="Are all processes complete?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="997.75" y="2223.51" width="99.49" height="99.49" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-59" target="Z3DZMybaHigUyCzGkq5z-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-59" value="Assume processes are complete and define integer i" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1175.495" y="2382.505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-62" target="Z3DZMybaHigUyCzGkq5z-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-1" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Z3DZMybaHigUyCzGkq5z-65">
+          <mxGeometry x="-0.0791" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z3DZMybaHigUyCzGkq5z-62" target="ljsTq_bSfUcLJ_7WJwB0-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-20" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ljsTq_bSfUcLJ_7WJwB0-18">
+          <mxGeometry x="-0.1547" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-62" value="Is process&#39; burst time valid? and Is total amount of current used ram and process&#39; allocated ram smaller or equal to than max ram? and total cpu rate used by processes and process&#39; cpu rate smaller or equal to max cpu rate?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="630" y="2425.5" width="270" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-64" target="Z3DZMybaHigUyCzGkq5z-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-64" value="Place process in proper queue" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="471.5" y="2727.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Z3DZMybaHigUyCzGkq5z-66" target="Z3DZMybaHigUyCzGkq5z-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="765" y="2418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-69" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Z3DZMybaHigUyCzGkq5z-68" vertex="1" connectable="0">
+          <mxGeometry x="-0.2873" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z3DZMybaHigUyCzGkq5z-66" target="Z3DZMybaHigUyCzGkq5z-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-23" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ljsTq_bSfUcLJ_7WJwB0-22">
+          <mxGeometry x="0.0134" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-66" value="Is i smaller than process number?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="995" y="2360" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Z3DZMybaHigUyCzGkq5z-70" target="Z3DZMybaHigUyCzGkq5z-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-70" value="Assign process to CPU-2" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="624" y="2727.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z3DZMybaHigUyCzGkq5z-72" target="ljsTq_bSfUcLJ_7WJwB0-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z3DZMybaHigUyCzGkq5z-72" value="Add process ram and cpu usage to total ram and total cpu usage" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="774" y="2727.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-2" target="ljsTq_bSfUcLJ_7WJwB0-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-2" value="Execute the process for the quantum time or until its done" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="774" y="2867.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-4" target="ljsTq_bSfUcLJ_7WJwB0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-8" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ljsTq_bSfUcLJ_7WJwB0-7">
+          <mxGeometry x="-0.0848" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-4" target="ljsTq_bSfUcLJ_7WJwB0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-11" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ljsTq_bSfUcLJ_7WJwB0-10">
+          <mxGeometry x="-0.0767" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-4" value="Is process&#39; burst time after queueing still bigger than 0?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="614" y="2837.5" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-6" target="ljsTq_bSfUcLJ_7WJwB0-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-6" value="Not all processes are complete.Set done variable to 0." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="614" y="2997.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-9" target="ljsTq_bSfUcLJ_7WJwB0-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-9" value="Add the process to the array of terminated process" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="2867.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-12" target="ljsTq_bSfUcLJ_7WJwB0-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="3100" />
+              <mxPoint x="1048" y="3100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-12" value="Update the total RAM and CPU rate" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="2997.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-15" target="Z3DZMybaHigUyCzGkq5z-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-15" value="Increase i variable by 1." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="979.5" y="2529.25" width="136" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-32" target="ljsTq_bSfUcLJ_7WJwB0-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1600" y="2190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-24" target="ljsTq_bSfUcLJ_7WJwB0-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-24" value="Print completed processes" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1340.0049999999999" y="2216.745" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ljsTq_bSfUcLJ_7WJwB0-27" target="8O5WfbR8zbWffjnatt95-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1600.005" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1600" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-27" value="Free process array from memory for efficiency" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1540.0049999999999" y="2035.5149999999999" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ljsTq_bSfUcLJ_7WJwB0-32" value="Finish the algorithm" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1540.0049999999999" y="2216.745" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
