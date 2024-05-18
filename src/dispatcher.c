@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
     if (argc != 2) {				//Usage check 
         printf("Usage:\n");
         printf("To dispatch processes to system:\n");
-        printf("%s <input.txt>:\n",argv[0]);
+        printf("%s <input.txt>\n",argv[0]);
         exit(1);
     }
     int numProcesses;
@@ -22,13 +22,16 @@ int main(int argc, char *argv[]) {
         return 1; // Extraction failed
     }
 
-
-    // Sort the processes based on their priority
+    // Create arrays for each priority level
     ProcessInfo pr0[PriorityCounts[0]];
     ProcessInfo pr1[PriorityCounts[1]];
     ProcessInfo pr2[PriorityCounts[2]];
     ProcessInfo pr3[PriorityCounts[3]];
+
+    // Initialize counters for each priority level
     int count0 = 0, count1 = 0, count2 = 0, count3 = 0;
+
+    // Iterate through the processes and assign them to the corresponding priority level array
     for(int i = 0; i < numProcesses; i++) {
         switch (processes[i].priority) {
             case 0:

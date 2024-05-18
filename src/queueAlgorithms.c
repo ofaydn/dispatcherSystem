@@ -105,16 +105,7 @@ void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FI
     int total_ram = 0;
     int total_cpu_rate = 0;
     int queueNumber = 0;
-
-    /*switch(QUANTUM){
-        case 8:
-            queueNumber =2;
-        case 16:
-            queueNumber = 3;
-        default:
-            printf("Invalid quantum number\n");
-            exit(1);
-    }*/
+    
     if (QUANTUM == 8) {
         queueNumber = 2;
     } else if (QUANTUM == 16) {
@@ -163,7 +154,7 @@ void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FI
             }
         }
     }
-    printf("CPU-2 que%d(priority-%d) (FCFS)->", queueNumber, queueNumber-1);
+    printf("CPU-2 que%d(priority-%d) (FCFS)->", queueNumber+1, queueNumber);
     for (int i = 0; i < n; i++) {
         printf("%s-", terminatedQueue[i]);
     }
@@ -176,9 +167,7 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
         printf("Failed to open %s.\n",filename);
         exit(1);
     }
-
     int is_text = 1; // Assume it's a text file initially
-
     // Check if the file contains non-printable characters (non-ASCII)
     int c;
     while ((c = fgetc(file)) != EOF) {
@@ -187,9 +176,7 @@ int isTextFile(const char *filename) { //returns 1 if file is a text, returns 0 
             break;
         }
     }
-
     fclose(file);
-
     return is_text;
 }
 
@@ -203,34 +190,35 @@ off_t getFileSize(const char *filename) {
 }
 
 void parseFileContent(const char* content, ProcessInfo* processes, int* numProcesses, int* PriorityCounts) {
-        char* token = strtok(content, "\n");
-        int index = 0;
-        while (token != NULL) {
-            processes[index].process_number = malloc(strlen(token) + 1);
-
-            if (sscanf(token, "%[^,],%d,%d,%d,%d,%d", processes[index].process_number, &processes[index].arrival_time, &processes[index].priority, &processes[index].burst_time, &processes[index].ram, &processes[index].cpu_rate) == 6) {
-                switch (processes[index].priority) {
-                    case 0:
-                        PriorityCounts[0]++;
-                        break;
-                    case 1:
-                        PriorityCounts[1]++;
-                        break;
-                    case 2:
-                        PriorityCounts[2]++;
-                        break;
-                    case 3:
-                        PriorityCounts[3]++;
-                        break;
-                    default:
-                        printf("Invalid priority number.\n");
-                        break;
-                }
-                index++;
+    char* token = strtok(content, "\n");
+    int index = 0;
+    while (token != NULL) {
+        processes[index].process_number = malloc(strlen(token) + 1); // Allocate memory for the process number
+        if (sscanf(token, "%[^,],%d,%d,%d,%d,%d", processes[index].process_number, 
+        &processes[index].arrival_time, &processes[index].priority, &processes[index].burst_time, 
+        &processes[index].ram, &processes[index].cpu_rate) == 6) {
+            switch (processes[index].priority) {
+                case 0:
+                    PriorityCounts[0]++; // Increment the count of priority 0 processes
+                    break;
+                case 1:
+                    PriorityCounts[1]++; // Increment the count of priority 1 processes
+                    break;
+                case 2:
+                    PriorityCounts[2]++; // Increment the count of priority 2 processes
+                    break;
+                case 3:
+                    PriorityCounts[3]++; // Increment the count of priority 3 processes
+                    break;
+                default:
+                    printf("Invalid priority number.\n"); // Print an error message for invalid priority number
+                    break;
             }
-            token = strtok(NULL, "\n");
+            index++;
         }
-        *numProcesses = index;
+        token = strtok(NULL, "\n");
+    }
+    *numProcesses = index; // Update the number of processes
 }
 
 ProcessInfo* extractProcesses(const char* filename, int* numProcesses, int* PriorityCounts) {
