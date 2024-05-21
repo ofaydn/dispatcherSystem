@@ -94,7 +94,7 @@ void sjf(ProcessInfo *prLists, int n, int CPU2_RAM, int MAX_CPU_RATE , FILE *fil
             fprintf(file, "%s\n", buffer);
         }
     }
-    printf("CPU-2 que2(priority-1) (FCFS)->");
+    printf("CPU-2 que2(priority-1) (SJF)->");
     for (int i = 0; i < n; i++) {
         printf("%s-", terminatedQueue[i]);
     }
@@ -154,7 +154,7 @@ void rr_algorithm(ProcessInfo *prList, int n, int CPU2_RAM, int MAX_CPU_RATE, FI
             }
         }
     }
-    printf("CPU-2 que%d(priority-%d) (FCFS)->", queueNumber+1, queueNumber);
+    printf("CPU-2 que%d(priority-%d) (RR)->", queueNumber+1, queueNumber);
     for (int i = 0; i < n; i++) {
         printf("%s-", terminatedQueue[i]);
     }
